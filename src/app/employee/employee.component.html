@@ -1,0 +1,4 @@
+<p class="emprow">
+    {{employee?.Emp_ID}} ----- {{employee?.Emp_Name}} ----- {{employee?.Emp_Location}}  
+    <button style="float: right;"  [disabled]="isDeleteDisabled" (click)="deleteEmployee()" >{{deleteButtonValue}}</button>
+</p>

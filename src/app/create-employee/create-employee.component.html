@@ -1,0 +1,19 @@
+<form [formGroup]="employeeForm" class="formClass">
+    <div class="formCOntrol">
+        <input type="text" placeholder="Emp ID" formControlName="Emp_id">
+    </div>
+
+    <div class="formCOntrol">
+        <input type="text" placeholder="Emp Name" formControlName="Emp_Name">
+    </div>
+
+    <div class="formCOntrol">
+        <input type="text" placeholder="Emp Location" formControlName="Emp_Location">
+    </div>
+
+    <div>
+        <button class="btnClass btnPrimary" [disabled]="isDisabled" (click)="saveEmployee()">{{btnCreate}}</button>
+        <button class="btnClass btnSecondary" [disabled]="isDisabled">Reset</button>
+    </div>
+
+</form>

@@ -1,0 +1,11 @@
+<app-create-employee (refreshEmpList)="getData()"></app-create-employee>
+
+<h3>Employee List :</h3> <button class="btnClass btnSecondary" (click)="getData()" >Refresh</button>
+<div class="divsplit">
+    <span *ngIf="emplist.length>0; else loading">
+        <app-employee *ngFor="let emp of emplist" [employee]=emp (refreshEmpList)="getData()"></app-employee>
+    </span>
+    <ng-template #loading>
+        <h2>{{lodigScreenDisp}}</h2>
+    </ng-template>
+</div>

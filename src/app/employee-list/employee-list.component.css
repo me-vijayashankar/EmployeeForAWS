@@ -1,0 +1,16 @@
+.divsplit{
+    display: inline;
+}
+.btnClass{
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.btnPrimary{
+    background-color: blue;
+    border-color: blue;
+}
+.btnSecondary{
+    background-color: orange;
+    border-color: orange;
+}
